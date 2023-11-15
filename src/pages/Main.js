@@ -19,8 +19,8 @@ const AuthForm = () => {
   return (
     <div className="wrapper">
       <div className="title-text">
-        <div className={`title login ${activeForm === 'login' ? 'active' : ''}`}>Welcome Back</div>
-        <div className={`title signup ${activeForm === 'signup' ? 'active' : ''}`}>Hey New Pal</div>
+        <div className={`title login ${activeForm === 'login' ? 'active' : ''}`}></div>
+        <div className={`title signup ${activeForm === 'signup' ? 'active' : ''}`}></div>
       </div>
       <div className="form-container">
         <div className="slide-controls">
@@ -56,21 +56,14 @@ const AuthForm = () => {
               <div className="field">
                 <input type="text" name="username" id="username" placeholder="username" required />
               </div>
-              {/* <div className="field">
-                <input type="text" placeholder="Email Address" required />
-              </div> */}
               <div className="field">
                 <input type="password" name='password' id="password" placeholder="password" required />
               </div>
-              {/* <div className="field">
-                <input type="password" placeholder="Confirm password" required />
-              </div> */}
               <div className="field btn">
                 <div className="btn-layer"></div>
                 <input type="submit" value="Signup" />
               </div>
               <div className="signup-link">Already have an account? <Link to="/login">Login now</Link></div>
-              {/* <div className="signup-link">Already have an account? <a href="#">Login</a></div> */}
             </Form>
           )}
         </div>
